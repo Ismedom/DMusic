@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #000;
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 1.5rem 2rem;
+    }
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: #1db954;
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem 4rem;
+}
+@media screen and (max-width: 768px) {
+    main {
+        padding: 2rem 2rem;
+    }
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+#player {
+    background-color: #282828;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#now-playing {
+    display: flex;
+    align-items: center;
+}
+
+#album-cover {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+#track-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#track-name {
+    font-weight: bold;
+}
+
+#artist-name {
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+#controls {
+    display: flex;
+    gap: 1rem;
+}
+
+#controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#progress-bar {
+    width: 30%;
+    height: 4px;
+    background-color: #535353;
+    position: relative;
+}
+
+#progress {
+    width: 0;
+    height: 100%;
+    background-color: #1db954;
+    position: absolute;
+}

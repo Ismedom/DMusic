@@ -1,0 +1,39 @@
+#featured-playlists {
+    margin-top: 2rem;
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.playlist-item {
+    background-color: #181818;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.playlist-item:hover {
+    background-color: #282828;
+}
+
+.playlist-item img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.playlist-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.playlist-item p {
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}

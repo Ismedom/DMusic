@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Playlist - DMusic</title>
+        <link rel="shortcut icon" href="/asset//fav_icon/image (54).webp" type="image/x-icon" />
+        <link rel="stylesheet" href="/style/main.css" />
+        <link rel="stylesheet" href="/style/playlist.css" />
+    </head>
+    <body>
+        <div id="app">
+            <nav>
+                <div class="logo">DMusic</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="playlist.html" class="active">Playlist</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h1 id="playlist-name">Playlist Name</h1>
+                <div id="playlist-details">
+                    <img src="https://via.placeholder.com/200" alt="Playlist cover" id="playlist-cover" />
+                    <div id="playlist-info">
+                        <p id="playlist-description">Playlist description goes here.</p>
+                        <p id="track-count">0 tracks</p>
+                    </div>
+                </div>
+                <ul id="track-list"></ul>
+            </main>
+            <div id="player">
+                <div id="now-playing">
+                    <img src="https://via.placeholder.com/50" alt="Album cover" id="album-cover" />
+                    <div id="track-info">
+                        <div id="track-name">Track Name</div>
+                        <div id="artist-name">Artist Name</div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <button id="prev-button">
+                        <img width="30" src="/asset/player_icons/rewind-button (1).png" alt="player_icons" />
+                    </button>
+                    <button id="play-pause-button">
+                        <img width="30" src="/asset/player_icons/play-button-arrowhead.png" alt="player_icons" />
+                    </button>
+                    <button id="next-button">
+                        <img width="30" src="/asset/player_icons/forward-button.png" alt="player_icons" />
+                    </button>
+                </div>
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+        </div>
+        <script src="js/player.js"></script>
+        <script src="js/playlist.js"></script>
+    </body>
+</html>

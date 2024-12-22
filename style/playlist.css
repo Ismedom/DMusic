@@ -1,0 +1,52 @@
+#playlist-details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+#playlist-cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#playlist-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#playlist-description {
+    margin-bottom: 1rem;
+}
+
+#track-list {
+    list-style-type: none;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #282828;
+    cursor: pointer;
+}
+
+.track-item:hover {
+    background-color: #282828;
+}
+
+.track-number {
+    width: 30px;
+    text-align: right;
+    margin-right: 1rem;
+    color: #b3b3b3;
+}
+
+.track-title {
+    flex-grow: 1;
+}
+
+.track-duration {
+    color: #b3b3b3;
+}
